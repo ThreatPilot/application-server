@@ -1,0 +1,13 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.threat {
+    margin-left: 10%;
+    margin-right: 10%;
+}
