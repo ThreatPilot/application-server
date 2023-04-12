@@ -42,12 +42,12 @@ Jatin Kumar - 101092120
 ## Listing known bugs
 
 We conducted extensive testing of the code in different scenarios and use cases to identify and address any potential bugs following is the list of some of them;
-The environment is not consistent across different operating systems, and the features listed are optimized for Windows.
-Occasionally, in the HTML report, some threats may not be picked, and we were unable to fully debug the cause of this inconsistency.
+1. The environment is not consistent across different operating systems, and the features listed are optimized for Windows.
+2. Occasionally, in the HTML report, some threats may not be picked, and we were unable to fully debug the cause of this due to time limitations.
 
 ## Current State of the prototype
 
-This is a Python implementation of a Threat Pilot Prototype. It defines classes for representing elements such as threats, findings, boundaries, and user inputs, and provides methods for processing and validating these elements. It also includes functionality for generating unique identifiers, reading data from a SQLite database, and drawing a DFD (Data Flow Diagram) for visualization. This code is a part of a larger framework for building and analyzing threats
+This is a Python implementation of a Threat Pilot Prototype. It defines classes for representing elements such as threats, findings, boundaries, and user inputs, and provides methods for processing and validating these elements. It also includes functionality for generating unique identifiers, reading data from a SQLite database, and drawing a DFD (Data Flow Diagram) for visualization. This code is a part of a larger framework for building and analyzing threats.
 
 ## Inspiration
 
@@ -70,7 +70,7 @@ Here's a high-level overview of what the code does:
 
 ## How we build it
 
-We built the Threat Pilot Prototype using Python and SQLite database. The system consists of four main files: main.py, gui.py, db.py, and threats.db. In main.py, we imported the necessary modules, created an SQLite database in RAM using sqlite3, and defined the structure of the 'threats' table with various columns such as SID, target, description, details, severity, condition, prerequisites, mitigations, custom example, and custom references. We then inserted sample threat data into the table using INSERT INTO queries. In gui.py, we developed a graphical user interface (GUI) using tkinter to interact with the threat management system. In db.py, we encapsulated the database operations into functions for easy reusability. Finally, in threats.db, the SQLite database file was created and stored with the inserted data. The system allows users to manage and mitigate threats through the GUI, which interacts with the SQLite database to store and retrieve threat-related information.
+We built the Threat Pilot Prototype using Python and SQLite database. The system consists of two main files: createSqlDb.py, and threatUtilities.py. In createSqlDb.py, we imported the necessary modules, created an SQLite database in RAM using sqlite3, and defined the structure of the 'threats' table with various columns such as SID, target, description, details, severity, condition, prerequisites, mitigations, custom example, and custom references. We then inserted sample threat data into the table using INSERT INTO queries. In threatUtilities.py, the main application logic resides with necessary classes such as ThreatModel, Element, and it subclasses.
 
 
 ## Challenges we ran into
