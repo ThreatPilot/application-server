@@ -14,3 +14,11 @@
 - Graphviz package
 - java 14.0.1
 - pandoc
+
+#### Project inspired from PyTm https://github.com/izar/pytm
+
+## Class Diagram
+
+![SYSTEM UML Diagram drawio](https://user-images.githubusercontent.com/43823689/226475143-44e93c82-c890-4548-9502-3cbc10f1dbf3.png)
+
+
